@@ -9,6 +9,8 @@ export const metadata = {
   openGraph: {
     title: "Jake Richard",
     description: "Software engineering portfolio, project index, and sandbox",
+    url: "https://jakerichard.tech",
+    siteName: "Jake Richard",
     images: [
       {
         url: "/og-image.png",
