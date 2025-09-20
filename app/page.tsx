@@ -30,9 +30,10 @@ export default function Home() {
         {/* Circular headshot */}
         <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-lg">
           <Image
-            src="/headshot-ghibli.png"
+            src="/images/headshot-ghibli.png"
             alt="Profile picture"
             fill
+            sizes="192px"
             className="object-cover object-top"
             priority
           />
