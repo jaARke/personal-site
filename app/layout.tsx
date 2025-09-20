@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Jake Richard Software Portfolio",
     images: [
       {
-        url: "/og/og-home.png",
+        url: "/og/og-image.png",
         width: 1200,
         height: 630,
         alt: "Jake Richard's software portfolio",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jake Richard │ Portfolio",
     description: "Software portfolio, project index, and sandbox.",
-    images: ["/og/og-home.png"],
+    images: ["/og/og-image.png"],
   },
   icons: {
     icon: [
