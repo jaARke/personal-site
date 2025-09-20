@@ -4,13 +4,13 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Jake Richard",
+  title: "Jake Richard │ Software Engineer",
   description: "Software engineering portfolio, project index, and sandbox",
   openGraph: {
-    title: "Jake Richard",
+    title: "Jake Richard │ Software Engineer",
     description: "Software engineering portfolio, project index, and sandbox",
     url: "https://jakerichard.tech",
-    siteName: "Jake Richard",
+    siteName: "Jake Richard │ Software Engineer",
     images: [
       {
         url: "/og-image.png",
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jake Richard",
+    title: "Jake Richard │ Software Engineer",
     description: "Software engineering portfolio, project index, and sandbox",
     images: ["/og-image.png"],
   },
