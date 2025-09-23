@@ -1,28 +1,28 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
-  const [displayText, setDisplayText] = useState("");
-  const [showSubtext, setShowSubtext] = useState(false);
-  const fullText = "Coming Soon";
-  
+  const [displayText, setDisplayText] = useState('')
+  const [showSubtext, setShowSubtext] = useState(false)
+  const fullText = 'Coming Soon'
+
   useEffect(() => {
-    let index = 0;
+    let index = 0
     const timer = setInterval(() => {
       if (index < fullText.length) {
-        setDisplayText(fullText.slice(0, index + 1));
-        index++;
+        setDisplayText(fullText.slice(0, index + 1))
+        index++
       } else {
-        clearInterval(timer);
+        clearInterval(timer)
         // Show subtext after main text is complete
-        setTimeout(() => setShowSubtext(true), 500);
+        setTimeout(() => setShowSubtext(true), 500)
       }
-    }, 100); // 100ms delay between characters
-    
-    return () => clearInterval(timer);
-  }, []);
+    }, 100) // 100ms delay between characters
+
+    return () => clearInterval(timer)
+  }, [])
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-gray-900">
@@ -38,7 +38,7 @@ export default function Home() {
             priority
           />
         </div>
-        
+
         {/* Coming soon message with typewriter effect */}
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
@@ -55,5 +55,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  );
+  )
 }
